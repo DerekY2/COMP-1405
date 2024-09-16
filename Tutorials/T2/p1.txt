@@ -1,0 +1,12 @@
+PS C:\Users\derek> python
+Python 3.12.6 (tags/v3.12.6:a4a2d2b, Sep  6 2024, 20:11:23) [MSC v.1940 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> 42*60+42
+2562
+>>> 10/1.61
+6.211180124223602
+>>> 10/1.61/2562
+0.0024243482139826703
+>>> 10/1.61/2562*3600
+8.727653570337614
+>>>
