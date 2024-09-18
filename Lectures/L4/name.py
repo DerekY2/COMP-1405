@@ -14,3 +14,7 @@ print(string1.split(maxsplit=2))
 
 print(' '.join(string1.split()))
 print(':'.join(string1.split()))
+
+print(string1.find("lots"))
+print(string1.find("random"))
+print(string1.find("zzz"))
