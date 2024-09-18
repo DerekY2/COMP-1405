@@ -1,0 +1,23 @@
+PS C:\Users\derek> python
+Python 3.12.6 (tags/v3.12.6:a4a2d2b, Sep  6 2024, 20:11:23) [MSC v.1940 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> origin = [0,1,2,3,4,5,6,7,8,9]
+>>> a=origin
+>>> b=a[1:8:3]
+>>> b
+[1, 4, 7]
+>>> b=a[1:8:1]
+>>> b
+[1, 2, 3, 4, 5, 6, 7]
+>>> id(b)
+2029527284544
+>>> b=a[:]
+>>> id(b)
+2029527372160
+>>> b=a[1:2]
+>>> b
+[1]
+>>> b=a[1:6]
+>>> b
+[1, 2, 3, 4, 5]
+>>>
