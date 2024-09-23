@@ -3,9 +3,9 @@ lastName = "Deere"
 fullName = firstName + lastName
 print(fullName)
 
-string1 = "   lots of random whitespaces idk  "
+string1 = "br.   lots of random whitespaces idkbr  .br"
 print(string1.strip())
-print(string1.strip("wca."))
+print(string1.strip("br."))
 
 print(string1.split())
 print(string1.split("o"))

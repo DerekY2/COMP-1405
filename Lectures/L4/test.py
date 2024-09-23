@@ -1,8 +1,8 @@
 name = "John Deere"
 a = ":3"
-b=0
+b = 0
 for x in name:
-  print(ord(x))
-  b=x
-  for y in range(b):
-    print(a)
+  num = ord(x)
+  print(num)
+  for y in range(num):
+    print(f"{a} {y}")
