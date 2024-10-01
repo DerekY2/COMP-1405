@@ -3,8 +3,7 @@
 >>> firstChar = school[:1]
 >>> lastThreeChars = school[length-3:]
 >>> firstChar + lastThreeChars
-'Pool'
-
+'Pool'  
 
 >>> phrase = "So, long and thanks for all the fish"
 >>> phraseList = phrase.split('h')
@@ -13,8 +12,6 @@
 >>> phraseList                                        ## 2b.  use len() to find length of list
 ['So, long and t', 'anks for all t', 'e fis', '']     ## 2c.  4th element is '', an empty string - nothing. This is because
                                                               there is technically "nothing" after the final 'h'.
-
-
 
 >>> day = "     Carpe diem     "                      ## 3a.
 >>> day.strip()

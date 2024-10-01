@@ -1,0 +1,20 @@
+>>> school = 'Private School'
+>>> school[:1]+school[11:]
+'Pool'
+>>> phrase = 'So, long and thanks for all the fish'
+>>> phraseList = phrase.split('h')
+>>> phraseList
+['So, long and t', 'anks for all t', 'e fis', '']
+>>> len(phraseList)
+4
+
+a) 22
+b)len()
+c)at index 3, there's nothing in it. perhaps it happened because it split at the h and expected further output but there was nothing else, so it was left null
+
+
+>>> day = '     Carpe diem     '
+>>> day.strip()
+'Carpe diem'
+>>> day.strip()[2:8]
+'rpe di'

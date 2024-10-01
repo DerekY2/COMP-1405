@@ -1,0 +1,27 @@
+1a.
+
+(((((Not G) AND F) OR C) OR E) OR (Not D) AND H) OR ((Not A) AND (Not B))
+(((((Not true) AND true) OR true) OR false) OR (Not true) AND false) OR ((Not false) AND (Not false))
+(((((false) AND true) OR true) OR false) OR (false) AND false) OR ((true) AND (true))
+((((false) OR true) OR false) OR (false) AND false) OR (true)
+((true OR false) OR (false) AND false) OR (true)
+((true) OR (false) AND false) OR (true)
+(true AND false) OR (true)
+(false) OR (true)
+true
+
+1b.
+
+((((NOT A) AND (NOT F)) OR (C AND B) OR D) AND (NOT E)) AND H OR G
+((((NOT true) AND (NOT true)) OR (false AND true) OR true) AND (NOT false)) AND false OR false
+((((false) AND (false)) OR (false) OR true) AND (true)) AND false OR false
+(((false) OR (false) OR true) AND (true)) AND false OR false
+((false OR true) AND (true)) AND false OR false
+((true) AND (true)) AND false OR false
+true AND false OR false
+false OR false
+false
+
+2a.
+
+animalList = myList[:7:2]
