@@ -1,4 +1,4 @@
-## check if integer input is even or odd
+## determine if integer input is less/greater than or equal to zero
 
 # while True:
 #   try:
@@ -11,7 +11,10 @@
 
 number = int(input("Enter an integer: "))
 
-if number % 2 == 0: 
-  print("Input is even.")
+if number > 0:
+  print("Input is greater than 0.")
 else:
-  print("Input is odd.")
+  if number < 0:
+    print("Input is less than 0.")
+  else:
+      print("Input is equal to 0.")
