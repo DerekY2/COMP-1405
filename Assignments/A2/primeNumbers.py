@@ -18,7 +18,7 @@ def findDivisors(number):
       divisors.append(str(i)) # append the divisor to the list of divisors
 
   return divisors # return list of divisors
-              
+
 
 #  generate a number between 1-30(inclusive)
 number = random.randint(1,30)
