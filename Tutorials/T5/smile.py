@@ -20,7 +20,10 @@ for i in range(20,400,20):
 pygame.draw.circle(drawingWindow, black, (200, 200), 100, 3)
 
 # face - eyes
+pygame.draw.circle(drawingWindow, black, (160, 170), 11)
 pygame.draw.circle(drawingWindow, brown, (160, 170), 10)
+
+pygame.draw.circle(drawingWindow, black, (240, 170), 11)
 pygame.draw.circle(drawingWindow, brown, (240, 170), 10)
 
 # face - mouth
