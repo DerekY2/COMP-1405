@@ -5,7 +5,7 @@
 '''
 
 import random
-import divisors # we can simply import the divisors.py file from Part II Q1. However the function itself is still included in this file just in case divisors.py is inaccessible to the person marking this assignment
+import divisors
 
 number = random.randint(1,30)
 print(f"The generated number is: {number}")
