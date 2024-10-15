@@ -3,6 +3,8 @@
             Name: Derek Yu
             Student #: 101331395
             Date Created: Oct. 09 2024
+
+            Finds all narcissistic numbers in a range
 '''
 
 def findNarcissisticNums(start, end):
@@ -10,40 +12,37 @@ def findNarcissisticNums(start, end):
 
   # cycle through every integer within the specified range [start, end)
   for n in range(start, end):
-    ones = n%10        # ones = the digit in the "ones" position of the integer
-    tens = n//10%10    # tens = the digit in the "tens" position of the integer
-    hundreds = n//100  # hundreds the digit in the "hundreds" position of the integer
-
+    # split each integer into its digits
+    ones = n%10
+    tens = n//10%10
+    hundreds = n//100
     cubedDigits = ones**3 + tens**3 + hundreds**3  
 
     if cubedDigits == n:  
       numList.append(str(n))  # n is a narcissistic number, append to list
-
-  return numList # return the list of narcissistic numbers
+  return numList
 
 # run program until stopped by "QUIT" entry
 while True:
   startIndex = input("Enter the starting integer, or QUIT to exit: ").strip().upper()
-
-  if startIndex == "QUIT": # if the user entered "QUIT", the program will stop.
+  if startIndex == "QUIT": # handle user quit request
     print("Quit program.")
     break
-  endIndex = input("Enter the ending integer, or QUIT to exit: ").strip().upper()
 
+  endIndex = input("Enter the ending integer, or QUIT to exit: ").strip().upper()
   if endIndex == "QUIT":
     print("Quit program.")
     break
 
-  if startIndex.isdigit() and endIndex.isdigit() and len(startIndex)==3 and len(endIndex)==3: # if the user enters a valid start/end 3-digit range
+  # makes sure the user enters a valid 3-digit range
+  if len(startIndex)==3 and len(endIndex)==3 and startIndex < endIndex: 
 
+    # determine narcissistic numbers in the range
     narcissisticNumbers = findNarcissisticNums(int(startIndex), int(endIndex))
-  
-    # if there are numbers in the returned list
     if(narcissisticNumbers):
       print(f"The narcissistic numbers from {startIndex} (inclusive) to {endIndex} (exclusive) are: {", ".join(narcissisticNumbers)}")
-    # if the returned list is empty
     elif(not narcissisticNumbers):
       print(f"There are no narcissistic numbers from {startIndex} (inclusive) to {endIndex} (exclusive).")
-
+  
   else: # if the user inputs anything other than "QUIT", or two valid 3-digit numbers
-    print("ERROR: Inputs must be 3-digit integers, try again.")
+    print("ERROR: Inputs must be a valid range of 3-digit integers, try again.")

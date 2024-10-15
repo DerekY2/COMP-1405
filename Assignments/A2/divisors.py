@@ -3,12 +3,14 @@
             Name: Derek Yu
             Student #: 101331395
             Date Created: Oct. 09 2024
+            
+            A function which returns a list of divisors for a given number
 '''
 
-# Function that returns a list of divisors of integer "number"
+# Function that returns a list of divisors of "number"
 def findDivisors(number):
   divisors=[]
-  
+
   # Find all integer divisors
   for i in range(1, number + 1):
 
