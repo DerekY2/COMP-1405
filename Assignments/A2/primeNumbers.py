@@ -1,7 +1,11 @@
-'''
-  - Generate and display a pseudo-random number within the range [1,30],
-    then determine whether it is a prime number of not.
-  - Implements the findDivisors() function from Part II Q1
+# COMP 1005/1405 Section E - Assignment 2
+''' Project Details
+            Name: Derek Yu
+            Student #: 101331395
+            Date Created: Oct. 09 2024
+    
+    External Librairies Used
+            findDivisors(number) - from Part II Q1
 '''
 
 import random

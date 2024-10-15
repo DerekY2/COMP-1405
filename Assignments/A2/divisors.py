@@ -1,19 +1,18 @@
-'''
-  Part II Q1
-  Write a function that takes an integer input and returns a list of its divisors as output
+# COMP 1005/1405 Section E - Assignment 2
+''' Project Details
+            Name: Derek Yu
+            Student #: 101331395
+            Date Created: Oct. 09 2024
 '''
 
-# take an integer as in input
+# Function that returns a list of divisors of integer "number"
 def findDivisors(number):
   divisors=[]
   
-  # cycle through every integer form 0 to "number", inclusive
+  # Find all integer divisors
   for i in range(1, number + 1):
 
-    # if number%i ==0, it is a divisor of "number"
     if number % i == 0: 
-      divisors.append(str(i)) # append the divisor to the list of divisors
+      divisors.append(str(i)) # "i" is a divisor, so we append it to the list of divisors
 
-  return divisors # return list of divisors
-
-# print(findDivisors(90))
+  return divisors
