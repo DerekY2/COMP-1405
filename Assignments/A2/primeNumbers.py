@@ -1,18 +1,27 @@
-# COMP 1005/1405 Section E - Assignment 2
-''' Project Details
-            Name: Derek Yu
-            Student #: 101331395
-            Date Created: Oct. 09 2024
-
-            Generates a pseudo-random number, and determines whether it is a prime number or not
+''' 
+  COMP 1005/1405 Section E - Assignment 2 Part II Q3
+  Project Details
+      Name: Derek Yu
+      Student #: 101331395
+      Date: October 15, 2024
+  
+  External Libraries Used
+      None
+  
 '''
-
 import random
 
 # same function from Part II Q1
 def findDivisors(number):
+  """
+  Function Description:
+      Finds all divisors of a number
+  Parameters:
+      number (int): a number
+  Return:
+      list: list of divisors of number
+  """
   divisors=[]
-
   # cycle through every integer form 0 to "number", inclusive
   for i in range(1, number + 1):
 

@@ -1,15 +1,26 @@
-# COMP 1005/1405 Section E - Assignment 2
-''' Project Details
-            Name: Derek Yu
-            Student #: 101331395
-            Date Created: Oct. 09 2024
-
-            Finds all narcissistic numbers in a range
+''' 
+  COMP 1005/1405 Section E - Assignment 2 Part II Q2
+  Project Details
+      Name: Derek Yu
+      Student #: 101331395
+      Date: October 15, 2024
+  
+  External Libraries Used
+      None
+  
 '''
 
 def findNarcissisticNums(start, end):
+  """
+  Function Description:
+    Find all narcissistic numbers within a range
+  Parameters:
+    start (int): start of range (inclusive)
+    end (int): end of range (exclusive)
+  Return:
+    numList (list): list of all narcissistic numbers in range [start,end)
+  """
   numList = []
-
   # cycle through every integer within the specified range [start, end)
   for n in range(start, end):
     # split each integer into its digits
@@ -34,7 +45,7 @@ while True:
     print("Quit program.")
     break
 
-  # makes sure the user enters a valid 3-digit range
+  # check if user entered a valid 3-digit range
   if len(startIndex)==3 and len(endIndex)==3 and startIndex < endIndex: 
 
     # determine narcissistic numbers in the range
