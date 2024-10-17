@@ -3,18 +3,19 @@ b = True
 
 while b:
   print(i)
-  i+=1
+  i+=5
   if i>98:
     b=False
 
 while b:
   print(i)
-  i+=1
+  i+=5
   if i>98:
     break
 
 thing = 3.134534
-print(f"{thing: .4f}")
+print(f"{thing: .3f}")
+print(f"{round(thing, 4)}")
 print(f"{round(thing,4)}")
 
 def ask(q):
